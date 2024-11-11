@@ -1,0 +1,24 @@
+﻿<Window x:Class="MusicStore.AdminMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Admin Main Window" Height="400" Width="600" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <!-- Gradient Background -->
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#2C3E50" Offset="0.0" />
+            <GradientStop Color="#34495E" Offset="1.0" />
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <!-- Revenue Report Button -->
+            <Button Name="RevenueReportButton" Content="Revenue Report" FontSize="24" Width="300" Height="80" Margin="10" Background="#9B59B6" Foreground="White" BorderBrush="#8E44AD" BorderThickness="2" Click="RevenueReportButton_Click"/>
+
+            <!-- Manage User Button -->
+            <Button Name="ManageUserButton" Content="Manage User" FontSize="24" Width="300" Height="80" Margin="10" Background="#F39C12" Foreground="White" BorderBrush="#E67E22" BorderThickness="2" Click="ManageUserButton_Click"/>
+
+            <!-- Manage Album Button -->
+            <Button Name="ManageAlbumButton" Content="Manage Album" FontSize="24" Width="300" Height="80" Margin="10" Background="#1ABC9C" Foreground="White" BorderBrush="#16A085" BorderThickness="2" Click="ManageAlbumButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

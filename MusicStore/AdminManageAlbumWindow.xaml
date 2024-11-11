@@ -1,0 +1,67 @@
+﻿<Window x:Class="MusicStore.AdminManageAlbumWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Manage Album - Music Store" Height="797" Width="703" Background="#282C34" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" >
+    <Grid Margin="10,10,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Section -->
+        <Label x:Name="ManageWindowModeLabel" Content="Manage Album" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="#61AFEF" Margin="0,10,0,20"/>
+
+        <!-- Album Details Section -->
+        <StackPanel Grid.Row="1" Margin="0,0,0,119">
+            <StackPanel Margin="0,10">
+                <Label Content="Title:" Foreground="#ABB2BF"/>
+                <TextBox x:Name="TitleTextBox" Height="30" Margin="0,5" Background="#3B4048" Foreground="White"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,10">
+                <Label Content="Price:" Foreground="#ABB2BF"/>
+                <TextBox x:Name="PriceTextBox" Height="30" Margin="0,5" Background="#3B4048" Foreground="White"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,10">
+                <Label Content="Genre:" Foreground="#ABB2BF"/>
+                <ComboBox x:Name="GenreComboBox" Height="30" Background="#3B4048" Foreground="Black" Margin="0,5">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem">
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="Background" Value="LightGray"/>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0,10">
+                <Label Content="Artist:" Foreground="#ABB2BF"/>
+                <ComboBox x:Name="ArtistComboBox" Height="30" Background="#3B4048" Foreground="Black" Margin="0,5">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem">
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="Background" Value="LightGray"/>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Margin="0,10">
+                <Label Content="Stock:" Foreground="#ABB2BF"/>
+                <TextBox x:Name="StockTextBox" Height="30" Margin="0,5" Background="#3B4048" Foreground="White"/>
+            </StackPanel>
+            
+            <StackPanel Margin="0,10">
+                <Label Content="Album URL:" Foreground="#ABB2BF"/>
+                <TextBox x:Name="AlbumUrlTextBox" Height="30" Margin="0,5" Background="#3B4048" Foreground="White"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Buttons Section -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="2">
+            <Button x:Name="SaveAlbumButton" Content="Save" Height="40" Width="100" Margin="5" Background="#98C379" Foreground="White" Click="SaveAlbumButton_Click" />
+            <Button x:Name="BackToHomeButton" Content="Back to Home" Height="40" Width="120" Margin="5" Background="#61AFEF" Foreground="White" Click="BackToHomeButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

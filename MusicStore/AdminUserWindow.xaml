@@ -1,0 +1,43 @@
+﻿<Window x:Class="MusicStore.AdminUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Admin Dashboard - Manage Users" Height="600" Width="900" Background="#282C34" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header Section -->
+        <Label Content="User Management" HorizontalAlignment="Left" VerticalAlignment="Top" 
+               FontSize="28" FontWeight="Bold" Foreground="#61AFEF" Margin="10,10,0,0"/>
+        <Label Content="Manage Users in Music Store" HorizontalAlignment="Left" VerticalAlignment="Top"
+               FontSize="16" Foreground="#ABB2BF" Margin="10,50,0,0" Grid.Row="0"/>
+
+        <!-- User Details Data Grid -->
+        <DataGrid x:Name="UserDataGrid" Margin="24,10,154,37" Height="400" AutoGenerateColumns="False" FontSize="14" Grid.Row="1" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="User ID" Width="70" Binding="{Binding Userid}"/>
+                <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Username" Width="100" Binding="{Binding Username}"/>
+                <DataGridTextColumn Header="Email" Width="150" Binding="{Binding Email}"/>
+                <DataGridTextColumn Header="Phone" Width="100" Binding="{Binding PhoneNumber}"/>
+                <DataGridTextColumn Header="Role" Width="100" Binding="{Binding Role.Name}"/>
+                <DataGridTextColumn Header="Status" Width="80" Binding="{Binding Status}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- CRUD Buttons -->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Right" Margin="10, 0, 10, 170" VerticalAlignment="Top" Grid.Row="2">
+            <Button x:Name="CreateUserButton" Content="Add New User" Height="50" Margin="0,0,0,10" Background="#98C379" Foreground="White" FontSize="16" Click="CreateUserButton_Click"/>
+            <Button x:Name="UpdateUserButton" Content="Update User" Height="50" Margin="0,0,0,10" Background="#E5C07B" Foreground="White" FontSize="16" Click="UpdateUserButton_Click"/>
+            <Button x:Name="DeleteUserButton" Content="Delete User" Height="50" Margin="0,0,0,10" Background="#E06C75" Foreground="White" FontSize="16" Click="DeleteUserButton_Click"/>
+            <Button x:Name="QuitButton" Content="Quit" Height="50" Margin="0,0,0,10" Background="#61AFEF" Foreground="White" FontSize="16" Click="QuitButton_Click"/>
+        </StackPanel>
+
+        <!-- Footer -->
+        <Label Content="© 2024 MusicStore Admin" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" Foreground="#61AFEF" FontSize="12" Grid.Row="3"/>
+    </Grid>
+</Window>

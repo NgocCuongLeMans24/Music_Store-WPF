@@ -1,0 +1,78 @@
+﻿<Window x:Class="MusicStore.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicStore"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#FF2196F3" Offset="0.0"/>
+                <GradientStop Color="#FF21CBF3" Offset="1.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="400">
+            <TextBlock Text="Login" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+            <!-- Username Input Block -->
+            <Border BorderBrush="#FF2196F3" BorderThickness="2" CornerRadius="5" Margin="0,0,0,10">
+                <Grid Margin="5">
+                    <TextBox x:Name="UsernameTextBox" 
+                 Height="40" 
+                 Background="#FFF3F4" 
+                 Foreground="Black" 
+                 VerticalAlignment="Center" 
+                 Padding="5" 
+                 TextChanged="UsernameTextBox_TextChanged" 
+                 Loaded="UsernameTextBox_Loaded"/>
+                    <TextBlock x:Name="UsernamePlaceholder"
+                   Text="Username" 
+                   VerticalAlignment="Center" 
+                   Margin="5,0,0,0" 
+                   Foreground="Gray" 
+                   IsHitTestVisible="False"/>
+                </Grid>
+            </Border>
+
+            <!-- Password Input Block -->
+            <Border BorderBrush="#FF2196F3" BorderThickness="2" CornerRadius="5" Margin="0,0,0,20">
+                <Grid Margin="5">
+                    <PasswordBox x:Name="PasswordBox" 
+                     Height="40" 
+                     Background="#FFF3F4" 
+                     Foreground="Black" 
+                     VerticalAlignment="Center" 
+                     Padding="5" 
+                     PasswordChanged="PasswordBox_PasswordChanged" 
+                     Loaded="PasswordBox_Loaded"/>
+                    <TextBlock x:Name="PasswordPlaceholder"
+                   Text="Password" 
+                   VerticalAlignment="Center" 
+                   Margin="5,0,0,0" 
+                   Foreground="Gray" 
+                   IsHitTestVisible="False"/>
+                </Grid>
+            </Border>
+
+
+            <StackPanel HorizontalAlignment="Center" Width="400" Height="82">
+                <!-- Your other controls -->
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Name="LoginButton" Width="100" Margin="0,0,10,0" FontWeight="Bold" Background="#FF4CAF50" Foreground="White" Content="Login" Click="LoginButton_Click" />
+                    <Button x:Name="CancelButton" Width="100" FontWeight="Bold" Background="#FFf44336" Foreground="White" Content="Cancel" />
+                </StackPanel>
+
+                <!-- Move Register Button here for better alignment -->
+                <Button x:Name="RegisterButton" Content="Register" Width="100" Margin="0,20,0,0" FontWeight="Bold" Background="#FF2196F3" Foreground="White" Click="RegisterButton_Click"/>
+            </StackPanel>
+
+
+        </StackPanel>
+
+    </Grid>
+</Window>

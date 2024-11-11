@@ -1,0 +1,62 @@
+﻿<Window x:Class="MusicStore.AccountWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Account Details" Height="700" Width="1000" WindowStartupLocation="CenterScreen" Background="#F4F4F9">
+    <Grid Margin="20,20,20,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Grid.Row="0" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="#2C3E50">
+            Account Information
+        </TextBlock>
+
+        <!-- User Name -->
+        <TextBlock Grid.Row="1" FontSize="16" VerticalAlignment="Center" Margin="0,5" Foreground="#34495E">Name:</TextBlock>
+        <TextBox x:Name="NameTextBox" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" IsReadOnly="True" Margin="150,5" 
+                 Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1" FontSize="14" Padding="10"/>
+
+        <!-- Username -->
+        <TextBlock Grid.Row="2" FontSize="16" VerticalAlignment="Center" Margin="0,5" Foreground="#34495E">Username:</TextBlock>
+        <TextBox x:Name="UsernameTextBox" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" IsReadOnly="True" Margin="150,5" 
+                 Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1" FontSize="14" Padding="10"/>
+
+        <!-- Email -->
+        <TextBlock Grid.Row="3" FontSize="16" VerticalAlignment="Center" Margin="0,5" Foreground="#34495E">Email:</TextBlock>
+        <TextBox x:Name="EmailTextBox" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Center" IsReadOnly="True" Margin="150,5" 
+                 Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1" FontSize="14" Padding="10"/>
+
+        <!-- Phone Number -->
+        <TextBlock Grid.Row="4" FontSize="16" VerticalAlignment="Center" Margin="0,5" Foreground="#34495E">Phone Number:</TextBlock>
+        <TextBox x:Name="PhoneNumberTextBox" Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Center" IsReadOnly="True" Margin="150,5" 
+                 Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1" FontSize="14" Padding="10"/>
+
+        <!-- Address -->
+        <TextBlock Grid.Row="5" FontSize="16" VerticalAlignment="Center" Margin="0,5" Foreground="#34495E">Address:</TextBlock>
+        <TextBox x:Name="AddressTextBox" Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Center" IsReadOnly="True" Margin="150,5" 
+                 Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1" FontSize="14" Padding="10"/>
+
+        <!-- Total Amount -->
+        <TextBlock Grid.Row="6" FontSize="16" VerticalAlignment="Top" Margin="-10,55,10,0" Foreground="#34495E">Total Amount:</TextBlock>
+        <TextBox x:Name="TotalAmountTextBox" Grid.Row="6" VerticalAlignment="Top" IsReadOnly="True" Margin="150,45,150,0" 
+                 Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1" FontSize="14" Padding="10"/>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
+            <!-- Back to Home Button -->
+            <Button Content="Back to Home" Width="150" Height="40" Margin="10,0" Click="BackToHomeButton_Click"
+                    Background="#3498DB" Foreground="White" FontWeight="Bold" BorderBrush="#2980B9" BorderThickness="1" Padding="10"/>
+
+            <!-- Logout Button -->
+            <Button Content="Logout" Width="150" Height="40" Margin="10,0" Click="LogoutButton_Click"
+                    Background="#E74C3C" Foreground="White" FontWeight="Bold" BorderBrush="#C0392B" BorderThickness="1" Padding="10"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,47 @@
+﻿<Window x:Class="MusicStore.AdminHomeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Admin Dashboard - Music Store" Height="600" Width="900" Background="#282C34" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Header Section -->
+            <RowDefinition Height="*"/>
+            <!-- DataGrid Section -->
+            <RowDefinition Height="Auto"/>
+            <!-- CRUD Buttons Section -->
+            <RowDefinition Height="Auto"/>
+            <!-- Footer Section -->
+        </Grid.RowDefinitions>
+
+        <!-- Header Section -->
+        <Label Content="Admin Dashboard" HorizontalAlignment="Left" VerticalAlignment="Top" 
+               FontSize="28" FontWeight="Bold" Foreground="#61AFEF" Margin="10,10,0,0"/>
+        <Label Content="Manage Albums in Music Store" HorizontalAlignment="Left" VerticalAlignment="Top"
+               FontSize="16" Foreground="#ABB2BF" Margin="10,50,0,0" Grid.Row="0"/>
+
+        <!-- Album Details Data Grid -->
+        <DataGrid x:Name="AlbumDataGrid" Margin="24,10,154,37" Height="400" AutoGenerateColumns="False" FontSize="14" Grid.Row="1" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Album ID" Width="70" Binding="{Binding AlbumId}"/>
+                <DataGridTextColumn Header="Title" Width="*" Binding="{Binding Title}"/>
+                <DataGridTextColumn Header="Genre" Width="100" Binding="{Binding Genre.Name}"/>
+                <DataGridTextColumn Header="Artist" Width="100" Binding="{Binding Artist.Name}"/>
+                <DataGridTextColumn Header="Stock" Width="100" Binding="{Binding Stock}"/>
+                <DataGridTextColumn Header="Price" Width="80" Binding="{Binding Price, StringFormat=C}"/>
+                <DataGridTextColumn Header="Top Seller" Width="80" Binding="{Binding IsTop10BestSeller}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- CRUD Buttons -->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Right" Margin="10, 0, 10, 170" VerticalAlignment="Top" Grid.Row="2">
+            <Button x:Name="CreateAlbumButton" Content="Add New Album" Height="50" Margin="0,0,0,10" Background="#98C379" Foreground="White" FontSize="16" Click="CreateAlbumButton_Click"/>
+            <Button x:Name="UpdateAlbumButton" Content="Update Album" Height="50" Margin="0,0,0,10" Background="#E5C07B" Foreground="White" FontSize="16" Click="UpdateAlbumButton_Click"/>
+            <Button x:Name="DeleteAlbumButton" Content="Delete Album" Height="50" Margin="0,0,0,10" Background="#E06C75" Foreground="White" FontSize="16" Click="DeleteAlbumButton_Click"/>
+            <Button x:Name="QuitButton" Content="Quit" Height="50" Margin="0,0,0,10" Background="#61AFEF" Foreground="White" FontSize="16" Click="QuitButton_Click"/>
+        </StackPanel>
+
+        <!-- Footer -->
+        <Label Content="© 2024 MusicStore Admin" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" Foreground="#61AFEF" FontSize="12" Grid.Row="3"/>
+    </Grid>
+</Window>

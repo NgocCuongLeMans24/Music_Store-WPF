@@ -1,0 +1,31 @@
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\bin\Debug\net8.0\MusicStore.BLL.deps.json
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\bin\Debug\net8.0\MusicStore.BLL.dll
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\bin\Debug\net8.0\MusicStore.BLL.pdb
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\bin\Debug\net8.0\MusicStore.DAL.dll
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\bin\Debug\net8.0\MusicStore.DAL.pdb
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.AssemblyInfo.cs
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\obj\Debug\net8.0\MusicSto.11D3B754.Up2Date
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.dll
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\obj\Debug\net8.0\refint\MusicStore.BLL.dll
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.pdb
+C:\Users\admin\Documents\PRN212\PRN212_Assignment_MusicStore\MusicStore.BLL\obj\Debug\net8.0\ref\MusicStore.BLL.dll
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\bin\Debug\net8.0\MusicStore.BLL.deps.json
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\bin\Debug\net8.0\MusicStore.BLL.dll
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\bin\Debug\net8.0\MusicStore.BLL.pdb
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\bin\Debug\net8.0\MusicStore.DAL.dll
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\bin\Debug\net8.0\MusicStore.DAL.pdb
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.AssemblyInfo.cs
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.sourcelink.json
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\obj\Debug\net8.0\MusicSto.11D3B754.Up2Date
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.dll
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\obj\Debug\net8.0\refint\MusicStore.BLL.dll
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\obj\Debug\net8.0\MusicStore.BLL.pdb
+C:\Users\DELL\Documents\PRN212\PRN212_Assignment_MusicStore (1)\Music_Store-WPF\MusicStore.BLL\obj\Debug\net8.0\ref\MusicStore.BLL.dll

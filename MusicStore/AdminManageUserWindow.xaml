@@ -1,0 +1,81 @@
+﻿<Window x:Class="MusicStore.AdminManageUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Manage User - Music Store" Height="800" Width="500" Background="#282C34" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid Margin="10,10,0,15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Section -->
+        <Label x:Name="ManageWindowModeLabel" Content="Manage User" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#61AFEF" Margin="0,5,0,15"/>
+
+        <!-- User Details Section -->
+        <StackPanel Grid.Row="1" Margin="0,0,0,0" Grid.RowSpan="2">
+            <!-- Name -->
+            <StackPanel Margin="0,5">
+                <Label Content="Name:" Foreground="#ABB2BF"/>
+                <TextBox x:Name="NameTextBox" Height="25" Margin="0,3" Background="#3B4048" Foreground="White"/>
+            </StackPanel>
+
+            <!-- Username -->
+            <StackPanel Margin="0,5">
+                <Label Content="Username:" Foreground="#ABB2BF"/>
+                <TextBox x:Name="UsernameTextBox" Height="25" Margin="0,3" Background="#3B4048" Foreground="White"/>
+            </StackPanel>
+
+            <!-- Password -->
+            <StackPanel Margin="0,5">
+                <Label Content="Password:" Foreground="#ABB2BF"/>
+                <PasswordBox x:Name="PasswordBox" Height="25" Margin="0,3" Background="#3B4048" Foreground="White"/>
+            </StackPanel>
+
+            <!-- Email -->
+            <StackPanel Margin="0,5">
+                <Label Content="Email:" Foreground="#ABB2BF"/>
+                <TextBox x:Name="EmailTextBox" Height="25" Margin="0,3" Background="#3B4048" Foreground="White"/>
+            </StackPanel>
+
+            <!-- Phone Number -->
+            <StackPanel Margin="0,5">
+                <Label Content="Phone Number:" Foreground="#ABB2BF"/>
+                <TextBox x:Name="PhoneNumberTextBox" Height="25" Margin="0,3" Background="#3B4048" Foreground="White"/>
+            </StackPanel>
+
+            <!-- Address -->
+            <StackPanel Margin="0,5">
+                <Label Content="Address:" Foreground="#ABB2BF"/>
+                <TextBox x:Name="AddressTextBox" Height="25" Margin="0,3" Background="#3B4048" Foreground="White"/>
+            </StackPanel>
+
+            <!-- Role -->
+            <StackPanel Margin="0,5">
+                <Label Content="Role:" Foreground="#ABB2BF"/>
+                <ComboBox x:Name="RoleComboBox" Height="25" Background="#3B4048" Foreground="Black" Margin="0,3"/>
+            </StackPanel>
+
+            <!-- Status -->
+            <StackPanel Margin="0,5">
+                <Label Content="Status:" Foreground="#ABB2BF"/>
+                <ComboBox x:Name="StatusComboBox" Height="25" Background="#3B4048" Foreground="Black" Margin="0,3">
+                    <ComboBoxItem Content="Active" />
+                    <ComboBoxItem Content="Inactive" />
+                </ComboBox>
+            </StackPanel>
+
+            <!-- Total Amount -->
+            <StackPanel Margin="0,5">
+                <Label Content="Total Amount:" Foreground="#ABB2BF"/>
+                <TextBox x:Name="TotalAmountTextBox" Height="25" Margin="0,3" Background="#3B4048" Foreground="White"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Buttons Section -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="2">
+            <Button x:Name="SaveUserButton" Content="Save" Height="35" Width="80" Margin="5" Background="#98C379" Foreground="White" Click="SaveUserButton_Click"/>
+            <Button x:Name="BackToHomeButton" Content="Back to Home" Height="35" Width="100" Margin="5" Background="#61AFEF" Foreground="White" Click="BackToHomeButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
